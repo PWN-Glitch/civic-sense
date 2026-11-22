@@ -1,0 +1,30 @@
+[
+  {
+    "id": "baltimore",
+    "name": "Baltimore",
+    "adapter_type": "baltimore_deeplink",
+    "bbox": [-76.7117, 39.1972, -76.5294, 39.3720],
+    "adapter_config": {
+      "deeplink_base": "https://www.baltimorecity.gov/311",
+      "seeclickfix_url": "https://seeclickfix.com/baltimore"
+    }
+  },
+  {
+    "id": "chicago",
+    "name": "Chicago",
+    "adapter_type": "open311",
+    "bbox": [-87.9400, 41.6444, -87.5236, 42.0231],
+    "adapter_config": {
+      "endpoint": "https://311api.cityofchicago.org/open311/v2"
+    }
+  },
+  {
+    "id": "bloomington",
+    "name": "Bloomington",
+    "adapter_type": "open311",
+    "bbox": [-86.6200, 39.1100, -86.4400, 39.2200],
+    "adapter_config": {
+      "endpoint": "https://bloomington.in.gov/crm/open311/v2"
+    }
+  }
+]

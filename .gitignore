@@ -1,0 +1,43 @@
+# dependencies
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# expo
+.expo/
+dist/
+*.expo
+
+# env / secrets
+.env
+.env.local
+*.pem
+*.key
+
+# tooling
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+coverage/
+*.egg-info/
+build/
+*.apk
+*.aab
+*.keystore
+
+# app data
+uploads/
+*.sqlite3
+
+# os
+.DS_Store
+
+# exported model artifacts (regenerable via scripts/export_tflite.py)
+server/app/models_store/*.onnx
+server/app/models_store/*.tflite
+server/app/models_store/*.json
+server/data/seed_images/
+server/scripts/__pycache__/
+server/app/models_store/*.pt

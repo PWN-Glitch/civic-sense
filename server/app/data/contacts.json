@@ -1,0 +1,72 @@
+[
+  {
+    "organization": "Baltimore City 311",
+    "department": "Transportation",
+    "jurisdiction_id": "baltimore",
+    "channel_type": "WEB_FORM",
+    "value": "https://seeclickfix.com/baltimore",
+    "purpose": "Report a pothole or street issue via SeeClickFix",
+    "source_url": "https://seeclickfix.com/baltimore",
+    "source_type": "official",
+    "verification_status": "verified",
+    "handles_categories": ["pothole", "sidewalk damage", "streetlight", "graffiti", "trash"],
+    "requires": { "fields": ["description", "location", "photo"] },
+    "notes": "Baltimore routes many 311 categories through SeeClickFix. Official city-endorsed portal."
+  },
+  {
+    "organization": "Baltimore City 311",
+    "department": null,
+    "jurisdiction_id": "baltimore",
+    "channel_type": "GOVERNMENT_PORTAL",
+    "value": "https://www.baltimorecity.gov/311",
+    "purpose": "Baltimore City 311 service-request portal",
+    "source_url": "https://www.baltimorecity.gov/311",
+    "source_type": "official",
+    "verification_status": "verified",
+    "handles_categories": [],
+    "requires": { "fields": ["description", "location"] },
+    "notes": "Official city 311 portal; covers all categories."
+  },
+  {
+    "organization": "Baltimore City 311",
+    "department": null,
+    "jurisdiction_id": "baltimore",
+    "channel_type": "PHONE",
+    "value": "311",
+    "purpose": "Call Baltimore 311",
+    "source_url": "https://www.baltimorecity.gov/311",
+    "source_type": "official",
+    "verification_status": "verified",
+    "handles_categories": [],
+    "requires": { "fields": ["description", "location"] },
+    "notes": "Dial 311 within Baltimore City. Official non-emergency line."
+  },
+  {
+    "organization": "City of Chicago 311",
+    "department": null,
+    "jurisdiction_id": "chicago",
+    "channel_type": "OPEN311",
+    "value": "https://311api.cityofchicago.org/open311/v2",
+    "purpose": "Chicago Open311 GeoReport v2 endpoint",
+    "source_url": "https://311.chicago.gov/",
+    "source_type": "official",
+    "verification_status": "verified",
+    "handles_categories": [],
+    "requires": { "fields": ["location"] },
+    "notes": "Live Open311 GeoReport v2 API."
+  },
+  {
+    "organization": "Bloomington 311",
+    "department": null,
+    "jurisdiction_id": "bloomington",
+    "channel_type": "OPEN311",
+    "value": "https://bloomington.in.gov/crm/open311/v2",
+    "purpose": "Bloomington Open311 GeoReport v2 endpoint",
+    "source_url": "https://bloomington.in.gov/crm",
+    "source_type": "official",
+    "verification_status": "verified",
+    "handles_categories": [],
+    "requires": { "fields": ["location"] },
+    "notes": "Live Open311 GeoReport v2 API."
+  }
+]

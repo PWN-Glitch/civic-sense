@@ -1,0 +1,48 @@
+{
+  "expo": {
+    "name": "Civic Sense",
+    "slug": "civic-sense",
+    "scheme": "civicsense",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.civicsense.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#141B1E",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "./plugins/withCleartextTraffic",
+      "expo-sqlite",
+      "expo-secure-store",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Civic Sense needs the camera to photograph issues you report."
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Civic Sense uses your location only when you create a report, to place it on the map."
+        }
+      ],
+      "expo-web-browser",
+      "react-native-fast-tflite",
+      "@maplibre/maplibre-react-native",
+      "expo-font"
+    ]
+  }
+}
